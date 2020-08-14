@@ -1,0 +1,9 @@
+C:\Nemox\AcademicLife\AcademicLife\bin\Debug\AcademicLife.exe.config
+C:\Nemox\AcademicLife\AcademicLife\bin\Debug\AcademicLife.exe
+C:\Nemox\AcademicLife\AcademicLife\bin\Debug\AcademicLife.pdb
+C:\Nemox\AcademicLife\AcademicLife\obj\Debug\AcademicLife.Properties.Resources.resources
+C:\Nemox\AcademicLife\AcademicLife\obj\Debug\AcademicLife.csproj.GenerateResource.Cache
+C:\Nemox\AcademicLife\AcademicLife\obj\Debug\AcademicLife.exe
+C:\Nemox\AcademicLife\AcademicLife\obj\Debug\AcademicLife.pdb
+C:\Nemox\AcademicLife\AcademicLife\obj\Debug\AcademicLife.csprojResolveAssemblyReference.cache
+C:\Nemox\AcademicLife\AcademicLife\obj\Debug\AcademicLife.Home.resources
