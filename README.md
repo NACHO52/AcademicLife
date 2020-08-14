@@ -1,0 +1,2 @@
+# AcademicLife
+DesktopApp
