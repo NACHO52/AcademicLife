@@ -60,16 +60,47 @@ namespace AcademicLife
         private void btnCreateSubject_Click(object sender, EventArgs e)
         {
             HideSubMenu(pnlSubMenuSubjects);
+            OpenChildForm(new CRUDSubjectForm());
         }
 
         private void btnSearchSubjects_Click(object sender, EventArgs e)
         {
             HideSubMenu(pnlSubMenuSubjects);
+            OpenChildForm(new SearchSubjectForm());
         }
 
         private void btnExitApplication_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+        private Form activeForm = null;
+        private void OpenChildForm(Form childForm)
+        {
+            if(activeForm != null)
+            {
+                activeForm.Close();
+            }
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            pnlChildForm.Controls.Add(childForm);
+            pnlChildForm.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
+        private void btnProfile_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new ProfileForm());
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            if(activeForm != null)
+            {
+                activeForm.Close();
+            }
         }
     }
 }
