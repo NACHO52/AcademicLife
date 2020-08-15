@@ -22,8 +22,19 @@ namespace AcademicLife
 
         private void SetTheme()
         {
-            pnlSideMenuContainer.BackColor = ColorPalette.BlackCanary;
+            pnlSubMenuSubjects.Visible = false;
         }
+
+        #region ShowAndHideEvents
+        private void ShowSubMenu(Panel subMenu)
+        {
+            subMenu.Visible = true;
+        }
+        private void HideSubMenu(Panel subMenu)
+        {
+            subMenu.Visible = false;
+        }
+        #endregion
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -39,6 +50,26 @@ namespace AcademicLife
             //{
             //    MessageBox.Show("Error");
             //}
+        }
+
+        private void btnSubjects_Click(object sender, EventArgs e)
+        {
+            pnlSubMenuSubjects.Visible = !pnlSubMenuSubjects.Visible;
+        }
+
+        private void btnCreateSubject_Click(object sender, EventArgs e)
+        {
+            HideSubMenu(pnlSubMenuSubjects);
+        }
+
+        private void btnSearchSubjects_Click(object sender, EventArgs e)
+        {
+            HideSubMenu(pnlSubMenuSubjects);
+        }
+
+        private void btnExitApplication_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
