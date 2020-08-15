@@ -102,5 +102,16 @@ namespace AcademicLife
                 activeForm.Close();
             }
         }
+
+        private void tmrDateTime_Tick(object sender, EventArgs e)
+        {
+            lblTime.Text = DateTime.Now.ToString("HH:mm:ss");
+            string dayName = DateTime.Today.ToString("dddd");
+            string dayNumber = DateTime.Today.ToString("dd");
+            string monthName = DateTime.Today.ToString("MMMM");
+
+            lblDate.Text = dayName + " " + dayNumber + " de " + monthName;
+            //lblDate.Text = DateTime.Today.ToString("dddd dd MMMM del yyy");
+        }
     }
 }
