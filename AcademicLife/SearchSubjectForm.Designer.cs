@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.grdSubjects = new System.Windows.Forms.DataGridView();
             this.btnSubjectSave = new System.Windows.Forms.Button();
             this.cnSubjectName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cnSubjectCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdSubjects)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // grdSubjects
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.grdSubjects.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdSubjects.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cnSubjectName,
             this.cnSubjectCode});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 225);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(604, 253);
-            this.dataGridView1.TabIndex = 0;
+            this.grdSubjects.Location = new System.Drawing.Point(12, 225);
+            this.grdSubjects.Name = "grdSubjects";
+            this.grdSubjects.Size = new System.Drawing.Size(604, 253);
+            this.grdSubjects.TabIndex = 0;
             // 
             // btnSubjectSave
             // 
@@ -62,6 +62,7 @@
             this.btnSubjectSave.TabIndex = 7;
             this.btnSubjectSave.Text = "BUSCAR";
             this.btnSubjectSave.UseVisualStyleBackColor = false;
+            this.btnSubjectSave.Click += new System.EventHandler(this.btnSubjectSave_Click);
             // 
             // cnSubjectName
             // 
@@ -82,17 +83,17 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.ClientSize = new System.Drawing.Size(628, 577);
             this.Controls.Add(this.btnSubjectSave);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.grdSubjects);
             this.Name = "SearchSubjectForm";
             this.Text = "SearchSubjectForm";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdSubjects)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView grdSubjects;
         private System.Windows.Forms.Button btnSubjectSave;
         private System.Windows.Forms.DataGridViewTextBoxColumn cnSubjectName;
         private System.Windows.Forms.DataGridViewTextBoxColumn cnSubjectCode;
