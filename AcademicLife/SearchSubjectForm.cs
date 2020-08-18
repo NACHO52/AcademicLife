@@ -1,5 +1,4 @@
-﻿using AcademicLife.BusinessLogic;
-using AcademicLife.Entity;
+﻿using BusinessLogic;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,14 +18,36 @@ namespace AcademicLife
             InitializeComponent();
         }
 
-        private void btnSubjectSave_Click(object sender, EventArgs e)
+        private void SearchSubjectForm_Load(object sender, EventArgs e)
         {
-            IList<Subject> subjects = new List<Subject>();
+        }
 
-            subjects.Add(new Subject() { Name = "Quimica", Code = "62.01" });
-            subjects.Add(new Subject() { Name = "Fisica", Code = "86.41" });
+        private void ShowSubjects()
+        {
+            grdSubjects.DataSource = SubjectBL.ShowSubjects();
+        }
 
-            grdSubjects.DataSource = subjects;
+        private void btnSubjectSearch_Click(object sender, EventArgs e)
+        {
+            ShowSubjects();
+        }
+
+        private void btnSubjectEdit_Click(object sender, EventArgs e)
+        {
+            if(grdSubjects.SelectedRows.Count == 1)
+            {
+                this.Close();
+                CRUDSubjectForm childForm = new CRUDSubjectForm();
+
+                //activeForm = childForm;
+                childForm.TopLevel = false;
+                childForm.FormBorderStyle = FormBorderStyle.None;
+                childForm.Dock = DockStyle.Fill;
+                //pnlChildForm.Controls.Add(childForm);
+                //pnlChildForm.Tag = childForm;
+                childForm.BringToFront();
+                childForm.Show();
+            }
         }
     }
 }

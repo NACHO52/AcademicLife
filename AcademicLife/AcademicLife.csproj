@@ -46,20 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BusinessLogic\SubjectBL.cs" />
     <Compile Include="CRUDSubjectForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CRUDSubjectForm.Designer.cs">
       <DependentUpon>CRUDSubjectForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DAO\SubjectDAO.cs" />
-    <Compile Include="Entity\Subject.cs" />
-    <Compile Include="HomeForme.cs">
+    <Compile Include="HomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HomeForme.Designer.cs">
-      <DependentUpon>HomeForme.cs</DependentUpon>
+    <Compile Include="HomeForm.Designer.cs">
+      <DependentUpon>HomeForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ProfileForm.cs">
       <SubType>Form</SubType>
@@ -82,8 +79,8 @@
     <EmbeddedResource Include="CRUDSubjectForm.resx">
       <DependentUpon>CRUDSubjectForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HomeForme.resx">
-      <DependentUpon>HomeForme.cs</DependentUpon>
+    <EmbeddedResource Include="HomeForm.resx">
+      <DependentUpon>HomeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProfileForm.resx">
       <DependentUpon>ProfileForm.cs</DependentUpon>
@@ -117,7 +114,20 @@
   <ItemGroup>
     <None Include="Images\usuario-de-perfil.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj">
+      <Project>{c3f978c4-b3a3-42ef-902b-620d8a0679c1}</Project>
+      <Name>BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAO\DAO.csproj">
+      <Project>{38b1f83c-3841-453c-a7df-844ca18bd959}</Project>
+      <Name>DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{86304681-9d3c-4ae2-bb99-1c8019cb26da}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

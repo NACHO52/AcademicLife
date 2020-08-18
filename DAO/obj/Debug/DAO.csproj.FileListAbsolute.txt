@@ -1,0 +1,7 @@
+C:\Nemox\AcademicLife\DAO\bin\Debug\DAO.dll
+C:\Nemox\AcademicLife\DAO\bin\Debug\DAO.pdb
+C:\Nemox\AcademicLife\DAO\bin\Debug\Entity.dll
+C:\Nemox\AcademicLife\DAO\bin\Debug\Entity.pdb
+C:\Nemox\AcademicLife\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+C:\Nemox\AcademicLife\DAO\obj\Debug\DAO.dll
+C:\Nemox\AcademicLife\DAO\obj\Debug\DAO.pdb

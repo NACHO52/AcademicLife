@@ -17,6 +17,7 @@ namespace AcademicLife
         public Home()
         {
             InitializeComponent();
+            
             SetTheme();
         }
 

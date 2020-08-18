@@ -1,0 +1,9 @@
+C:\Nemox\AcademicLife\BusinessLogic\bin\Debug\BusinessLogic.dll
+C:\Nemox\AcademicLife\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\Nemox\AcademicLife\BusinessLogic\bin\Debug\DAO.dll
+C:\Nemox\AcademicLife\BusinessLogic\bin\Debug\Entity.dll
+C:\Nemox\AcademicLife\BusinessLogic\bin\Debug\DAO.pdb
+C:\Nemox\AcademicLife\BusinessLogic\bin\Debug\Entity.pdb
+C:\Nemox\AcademicLife\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Nemox\AcademicLife\BusinessLogic\obj\Debug\BusinessLogic.dll
+C:\Nemox\AcademicLife\BusinessLogic\obj\Debug\BusinessLogic.pdb
