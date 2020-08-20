@@ -38,7 +38,10 @@
             // 
             // txtSubjectName
             // 
+            this.txtSubjectName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.txtSubjectName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSubjectName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.txtSubjectName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
             this.txtSubjectName.Location = new System.Drawing.Point(151, 134);
             this.txtSubjectName.Name = "txtSubjectName";
             this.txtSubjectName.Size = new System.Drawing.Size(385, 30);
@@ -57,7 +60,7 @@
             // 
             // btnSubjectSave
             // 
-            this.btnSubjectSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSubjectSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnSubjectSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(178)))), ((int)(((byte)(126)))));
             this.btnSubjectSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSubjectSave.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
@@ -90,7 +93,7 @@
             this.lblSubjectCode.AutoSize = true;
             this.lblSubjectCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.lblSubjectCode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
-            this.lblSubjectCode.Location = new System.Drawing.Point(58, 188);
+            this.lblSubjectCode.Location = new System.Drawing.Point(58, 192);
             this.lblSubjectCode.Name = "lblSubjectCode";
             this.lblSubjectCode.Size = new System.Drawing.Size(81, 25);
             this.lblSubjectCode.TabIndex = 10;
@@ -98,7 +101,10 @@
             // 
             // txtSubjectCode
             // 
+            this.txtSubjectCode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.txtSubjectCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSubjectCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.txtSubjectCode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
             this.txtSubjectCode.Location = new System.Drawing.Point(151, 190);
             this.txtSubjectCode.Name = "txtSubjectCode";
             this.txtSubjectCode.Size = new System.Drawing.Size(385, 30);

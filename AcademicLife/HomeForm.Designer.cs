@@ -161,19 +161,20 @@
             this.btnHome.Padding = new System.Windows.Forms.Padding(24, 0, 0, 0);
             this.btnHome.Size = new System.Drawing.Size(250, 40);
             this.btnHome.TabIndex = 1;
-            this.btnHome.Text = "HOME";
+            this.btnHome.Text = "INICIO";
             this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.UseVisualStyleBackColor = true;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // btnExitApplication
             // 
+            this.btnExitApplication.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnExitApplication.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExitApplication.FlatAppearance.BorderSize = 0;
             this.btnExitApplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExitApplication.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExitApplication.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
-            this.btnExitApplication.Location = new System.Drawing.Point(0, 561);
+            this.btnExitApplication.Location = new System.Drawing.Point(0, 571);
             this.btnExitApplication.Name = "btnExitApplication";
             this.btnExitApplication.Padding = new System.Windows.Forms.Padding(24, 0, 0, 0);
             this.btnExitApplication.Size = new System.Drawing.Size(250, 40);
@@ -217,13 +218,12 @@
             // 
             // lblTime
             // 
-            this.lblTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.lblTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTime.AutoSize = true;
             this.lblTime.Font = new System.Drawing.Font("Roboto", 30.25F);
             this.lblTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(178)))), ((int)(((byte)(126)))));
-            this.lblTime.Location = new System.Drawing.Point(434, 590);
+            this.lblTime.Location = new System.Drawing.Point(446, 571);
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(132, 49);
             this.lblTime.TabIndex = 0;

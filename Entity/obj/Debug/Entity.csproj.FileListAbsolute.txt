@@ -2,4 +2,3 @@ C:\Nemox\AcademicLife\Entity\bin\Debug\Entity.dll
 C:\Nemox\AcademicLife\Entity\bin\Debug\Entity.pdb
 C:\Nemox\AcademicLife\Entity\obj\Debug\Entity.dll
 C:\Nemox\AcademicLife\Entity\obj\Debug\Entity.pdb
-C:\Nemox\AcademicLife\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
