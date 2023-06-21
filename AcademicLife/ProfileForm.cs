@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BusinessLogic;
+using Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,14 @@ namespace AcademicLife
         public ProfileForm()
         {
             InitializeComponent();
+            SetData();
+        }
+
+        private void SetData()
+        {
+            SystemUser obj = SystemUserBL.SystemUserGetMainUser();
+            txtFirstName.Text = obj.FirstName;
+            txtLastName.Text = obj.LastName;
         }
     }
 }

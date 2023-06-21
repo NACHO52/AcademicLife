@@ -10,11 +10,10 @@ namespace DAO
 {
     public static class Conection
     {
-        private static SqlConnection conection = new SqlConnection("Data Source=NACHO\\SQLEXPRESS;Initial Catalog=AcademicLife;Persist Security Info=True;User ID=sa;Password=pacha");
-
         public static SqlConnection OpenConection()
         {
-            if(conection.State == System.Data.ConnectionState.Closed)
+            SqlConnection conection = new SqlConnection("Data Source=NACHO\\SQLEXPRESS;Initial Catalog=AcademicLife;Persist Security Info=True;User ID=sa;Password=pacha");
+            if (conection.State == System.Data.ConnectionState.Closed)
             {
                 conection.Open();
             }
@@ -22,6 +21,7 @@ namespace DAO
         }
         public static SqlConnection CloseConection()
         {
+            SqlConnection conection = new SqlConnection("Data Source=NACHO\\SQLEXPRESS;Initial Catalog=AcademicLife;Persist Security Info=True;User ID=sa;Password=pacha");
             if (conection.State == System.Data.ConnectionState.Open)
             {
                 conection.Close();
@@ -33,6 +33,18 @@ namespace DAO
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = OpenConection();
             cmd.CommandText = "Select * from [" + tableName + "]";
+            //Para StoresProcedures usar esto:
+            //cmd.CommandType = CommandType.StoredProcedure;
+            DataTable dt = new DataTable();
+            dt.Load(cmd.ExecuteReader());
+            CloseConection();
+            return dt;
+        }
+        public static DataTable GetUnique(string tableName, int id)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = OpenConection();
+            cmd.CommandText = "SELECT * FROM [" + tableName + "] WHERE Id = " + id;
             //Para StoresProcedures usar esto:
             //cmd.CommandType = CommandType.StoredProcedure;
             DataTable dt = new DataTable();
@@ -52,12 +64,6 @@ namespace DAO
             {
                 cmd.Parameters.AddWithValue(item.ParameterName, item.Value);
             }
-            //cmd.Parameters.AddWithValue("@name", "");
-            //cmd.Parameters.AddWithValue("@code", "");
-            //cmd.Parameters.AddWithValue("@credits", null);
-            //cmd.Parameters.AddWithValue("@hours", null);
-            //cmd.Parameters.AddWithValue("@period", null);
-            //cmd.Parameters.AddWithValue("@status", null);
 
             DataTable dt = new DataTable();
             dt.Load(cmd.ExecuteReader());
@@ -71,7 +77,7 @@ namespace DAO
             cmd.Connection = Conection.OpenConection();
             var parametersStr = String.Join(",", parameters);
 
-            cmd.CommandText = "insert into [" + tableName + "] values (" + parametersStr + ")";
+            cmd.CommandText = "INSERT INTO [" + tableName + "] VALUES (" + parametersStr + ")";
             cmd.ExecuteNonQuery();
             cmd.Parameters.Clear();
         }
@@ -81,7 +87,7 @@ namespace DAO
             cmd.Connection = Conection.OpenConection();
             var parametersStr = String.Join(",", parameters);
 
-            cmd.CommandText = "update [" + tableName + "] set " + parametersStr + "WHERE Id = " + id;
+            cmd.CommandText = "UPDATE [" + tableName + "] SET " + parametersStr + "WHERE Id = " + id;
             //cmd.CommandText = "update " + tableName + " values (" + parametersStr + ")";
             cmd.ExecuteNonQuery();
             cmd.Parameters.Clear();
@@ -92,7 +98,7 @@ namespace DAO
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = Conection.OpenConection();
 
-            cmd.CommandText = "DELETE [" + tableName + "] where Id = " + id.ToString();
+            cmd.CommandText = "DELETE [" + tableName + "] WHERE Id = " + id.ToString();
             cmd.ExecuteNonQuery();
             cmd.Parameters.Clear();
         }

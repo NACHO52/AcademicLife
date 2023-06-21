@@ -226,5 +226,10 @@ namespace AcademicLife
         {
             ClearFields();
         }
+
+        private void btnNewSubject_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
